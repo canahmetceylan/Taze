@@ -18,7 +18,7 @@ public class ContentManager : IContentService
         if (flag)
             return contentType;
         else
-            throw new Exception("");
+            throw new Exception("Tablo ismi bulunamadı.");
     }
 
     public async Task<IEnumerable<dynamic>> GetAllAsync(string contentType)
